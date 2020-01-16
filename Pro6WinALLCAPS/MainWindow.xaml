@@ -1,0 +1,27 @@
+﻿<Window x:Class="Pro6WinALLCAPS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pro6WinALLCAPS"
+        mc:Ignorable="d"
+        Title="Pro6WinALLCAPS" Height="600" Width="650" Loaded="Window_Loaded" Icon="UpperCase.ico" Background="#FFF7F0E1" MinWidth="650" MinHeight="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="88*"/>
+                <RowDefinition Height="471*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="lstLibrary" Margin="10,10,288,10" MouseDoubleClick="LstLibrary_MouseDoubleClick" Background="#FFDED4BF" Grid.RowSpan="2"/>
+            <Button x:Name="btnAllCapsCopy" Content="Make ALL CAPS Copy" HorizontalAlignment="Right" Margin="0,10,29,0" VerticalAlignment="Top" Width="231" Height="57" Click="BtnAllCapsCopy_Click" />
+            <Button x:Name="btnSelectLibraryPath" Content="Select New Pro6 Library Folder" HorizontalAlignment="Right" Margin="0,0,29,10" Width="231"  Height="57" VerticalAlignment="Bottom" Click="btnSelectLibraryPath_Click" Grid.Row="1"/>
+            <TextBlock Margin="0,2,29,0" TextWrapping="Wrap" Text="Select an item in your Pro6 library and click &#x0a;&quot;Make ALL CAPS Copy&quot; button to make a new *copy* of the document converted to ALL CAPS.&#x0a;&#x0a;You can also double-click as a shortcut.&#x0a;&#x0a;Please note that the selected file is NOT changed at all when the new copy is made.&#x0a;&#x0a;However,  this is an unsupported app so you better make a backup of your library first! Have you done that yet?&#x0a;&#x0a;Make a backup NOW!" VerticalAlignment="Top" Height="282" Foreground="#FF6C633A" HorizontalAlignment="Right" Width="231" Grid.Row="1"/>
+            <Image Margin="0,0,110,81" Grid.Row="1" Source="gsg.png" HorizontalAlignment="Right" Width="71" Height="100" VerticalAlignment="Bottom" MouseDown="Image_MouseDown"/>
+
+        </Grid>
+    </Grid>
+</Window>
