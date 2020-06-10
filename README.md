@@ -1,6 +1,8 @@
 # Pro6WinALLCAPS
 Utility application to create UPPERCASE copies of ProPresenter6 documents on Windows
 
+![Screenshot](Pro6-UpperCare-er%20Screenshot.png)
+
 Basic Instructions:
 1. Run the application
 2. Select a document from your ProPresenter 6 library
